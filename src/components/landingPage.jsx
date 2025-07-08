@@ -57,7 +57,7 @@ export default function HeroLanding() {
   />
 
   {/* Overlay */}
-  <div className="absolute inset-0  z-10" />
+  <div className="absolute inset-0 bg-black/10 z-10" />
 
   {/* Foreground Content */}
   <div className="relative z-20 h-full flex items-center justify-center px-6 py-20">
@@ -117,9 +117,7 @@ export default function HeroLanding() {
 
   {/* Foreground Content */}
   <div className="relative z-20 flex items-center justify-center px-6 py-20">
-    <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-6xl w-full">
       <KeyFeatures />
-    </div>
   </div>
 </section>
 
