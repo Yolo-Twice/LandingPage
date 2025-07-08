@@ -1,53 +1,63 @@
+import KeyFeatures from "./keyFeatures";
+
 export default function HeroLanding() {
   return (
     <div className="h-screen snap-y snap-mandatory overflow-y-scroll">
-    <section className=" bg-lxj-softWhite min-h-screen flex items-center justify-center px-6 py-12">
-      <div className="h-screen snap-start max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section className="relative h-screen snap-start">
+  {/* Background Image */}
+  <img
+    src="images/truck.jpg" // Replace with actual path
+    alt="Background"
+    className="absolute inset-0 w-full h-full object-cover z-0"
+  />
 
-        {/* Left Content */}
-        <div>
-          
+  {/* Overlay for darkening the background */}
+  <div className="absolute inset-0 bg-black/40 z-10" />
 
-          <h1 className="text-5xl font-extrabold tracking-tight text-lxj-primary mb-6">
+  {/* Foreground Content */}
+  <div className="relative z-20 h-full flex items-center justify-center px-6 py-12">
+    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      {/* Left Content */}
+      <div>
+        <h1 className="text-5xl font-extrabold tracking-tight text-white mb-6">
           Transforming India’s Freight with Smart, Scalable Tech
-          </h1>
-
-          <p className="text-lxj-dark text-lg mb-8">
+        </h1>
+        <p className="text-white text-lg mb-8">
           Built for fleet owners, shippers, and mid-sized logistics players across Tier-2 & Tier-3 cities
-          </p>
-
-          <div className="flex space-x-4">
-            <a href="#" className="px-6 py-3 bg-lxj-accent text-white rounded-full font-semibold hover:bg-lxj-primary">
-              Get started for Free
-            </a>
-            <a href="#" className="px-6 py-3 border-2 border-lxj-accent rounded-full text-lxj-accent font-semibold hover:bg-gray-300">
-            Explore Features  →
-            </a>
-          </div>
+        </p>
+        <div className="flex space-x-4">
+          <a href="#" className="px-6 py-3 bg-lxj-accent text-white rounded-full font-semibold hover:bg-lxj-primary">
+            Get started for Free
+          </a>
+          <a href="#" className="px-6 py-3 border-2 border-white rounded-full text-white font-semibold hover:bg-white hover:text-lxj-accent">
+            Explore Features →
+          </a>
         </div>
-
-        {/* Right Image */}
-        <div className="relative">
-          <img
-            src="images/mobile-ui.png"
-            alt="Mobile UI"
-            className="w-full max-w-xs mx-auto drop-shadow-2xl rounded-xl"
-          />
-        </div>
-
       </div>
-    </section>
+
+      {/* Right Image */}
+      <div className="relative">
+        <img
+          src="images/mobile-ui.png"
+          alt="Mobile UI"
+          className="w-full max-w-xs mx-auto drop-shadow-2xl rounded-xl"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
   <section className="h-screen snap-start bg-lxj-softWhite flex items-center justify-center px-6 py-20">
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
     
     {/* Left Text Content */}
-    <article>
+    <article className=" bg-lxj-accent/30 p-6 rounded-2xl">
       <h2 className="text-5xl font-extrabold tracking-tight text-lxj-primary mb-8">
         About Us
       </h2>
       
       <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-        At <span className="font-semibold text-lxj-accent">LogiXJunction</span>, we serve as a technology-first intermediary, offering a digital platform that connects businesses and individuals with the right logistics service providers.
+        At <span className="font-semibold text-lxj-accent">LogiX<span className="text-lxj-alert">Junction</span></span>, we serve as a technology-first intermediary, offering a digital platform that connects businesses and individuals with the right logistics service providers.
         <br /><br />
         We do not provide logistics services directly—instead, we enable users to access and manage logistics more efficiently through smart tools, real-time data, and streamlined workflows.
       </p>
@@ -71,13 +81,16 @@ export default function HeroLanding() {
     {/* Right Image Content */}
     <div className="relative">
       <img
-        src="images/india-map-logistics.png"
+        src="images/freight.jpg"
         alt="India logistics map"
         className="w-full max-w-md mx-auto drop-shadow-2xl rounded-xl"
       />
     </div>
   </div>
 </section>
+<section className="min-h-screen snap-start bg-lxj-softWhite flex items-center justify-center px-6 py-20">
+    <KeyFeatures/>
+    </section>
 
   </div>  
 );
