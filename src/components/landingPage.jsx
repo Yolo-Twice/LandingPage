@@ -1,3 +1,4 @@
+import GlobeIndia from "./globe";
 import KeyFeatures from "./keyFeatures";
 
 export default function HeroLanding() {
@@ -63,7 +64,7 @@ export default function HeroLanding() {
     <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
       
       {/* Left Text Content */}
-      <article className="bg-white/10 p-8 rounded-2xl shadow-xl backdrop-blur-md border border-lxj-softYellow/60">
+      <article className="bg-white/10 p-8 rounded-2xl shadow-xl backdrop-blur-md ">
         <h2 className="text-5xl font-extrabold tracking-tight text-white mb-6">
           About <span className="text-white">Us</span>
         </h2>
@@ -76,13 +77,13 @@ export default function HeroLanding() {
 
         <div className="space-y-4 mt-8">
           <div>
-            <h3 className="text-xl font-semibold text-yellow-400 underline mb-1">Our Mission</h3>
+            <h3 className="text-xl font-semibold text-yellow-400  mb-1">Our Mission</h3>
             <p className="text-lg text-white">
               Empowering India’s logistics future through technology, transparency, and regional reach.
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-yellow-400  underline mb-1">Our Vision</h3>
+            <h3 className="text-xl font-semibold text-yellow-400  mb-1">Our Vision</h3>
             <p className="text-lg text-white">
               Digital freight tools for every fleet, from Jaipur to Jabalpur.
             </p>
@@ -92,19 +93,36 @@ export default function HeroLanding() {
 
       {/* Right Image */}
       <div className="relative">
-        <img
+        {/* <img
           src="images/india-map-logistics.png"
           alt=""
           className="w-full max-w-md mx-auto drop-shadow-2xl rounded-xl"
-        />
+        /> */}
+        <GlobeIndia />
       </div>
     </div>
   </div>
 </section>
 
-<section className="min-h-screen snap-start bg-lxj-softWhite flex items-center justify-center px-6 py-20">
-    <KeyFeatures/>
-    </section>
+<section className="relative min-h-screen snap-start">
+  {/* Background Image */}
+  <img
+    src="images/key-features-shipyard.jpg" // Change to your desired image
+    alt="Key Features Background"
+    className="absolute inset-0 w-full h-full object-cover z-0"
+  />
+
+  {/* Optional Overlay */}
+  <div className="absolute inset-0 bg-black/30 z-10" />
+
+  {/* Foreground Content */}
+  <div className="relative z-20 flex items-center justify-center px-6 py-20">
+    <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-10 max-w-6xl w-full">
+      <KeyFeatures />
+    </div>
+  </div>
+</section>
+
 
   </div>  
 );
