@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { careers } from "../data/careers";
 
-export default function Career() {
+export default function Careers() {
   const [selectedDept, setSelectedDept] = useState("");
   const [roles, setRoles] = useState([]);
   const [selectedRole, setSelectedRole] = useState(null);

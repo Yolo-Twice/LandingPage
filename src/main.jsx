@@ -4,11 +4,11 @@ import './index.css'
 import AboutUs from './components/aboutUs'
 import App from './App.jsx'
 import { createBrowserRouter,RouterProvider } from 'react-router'
-import Career from './components/career.jsx'
+import Careers from './components/career.jsx'
 
 const router = createBrowserRouter([
   {path:"/",element:<App/>},
-  {path:"/career",element:<Career/>},
+  {path:"/careers",element:<Careers/>},
   {path: "/about-us",element: <AboutUs />}
 ])
 
