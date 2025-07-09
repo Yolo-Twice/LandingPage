@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter:['Inter'],
+      },
       colors: {
         lxj: {
           primary: "#0a2463",
