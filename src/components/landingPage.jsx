@@ -1,4 +1,5 @@
 import KeyFeatures from "./keyFeatures";
+import News from "./landingPageComponents/news.jsx";
 import CaseStudyShowcase from "./landingPageComponents/caseStudy";
 import Testimonials from "./landingPageComponents/testimonials";
 import ContactCTASection from "./landingPageComponents/contact";
@@ -68,6 +69,8 @@ export default function HeroLanding() {
 </section>
 
 <Testimonials />
+<News />
+
 <CaseStudyShowcase/>
 <ContactCTASection/>
   </div>  

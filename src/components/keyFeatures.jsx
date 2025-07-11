@@ -2,22 +2,22 @@ import { FaTruckMoving, FaMapMarkedAlt, FaRoute, FaGavel } from "react-icons/fa"
 
 const features = [
   {
-    icon: <FaTruckMoving className="text-4xl text-lxj-alert" />,
+    icon: <FaTruckMoving className="text-4xl text-white" />,
     title: "Digital Freight Marketplace",
     desc: "Post, match & move loads with intelligent logistics algorithms.",
   },
   {
-    icon: <FaMapMarkedAlt className="text-4xl text-lxj-alert" />,
+    icon: <FaMapMarkedAlt className="text-4xl text-white" />,
     title: "Fleet Telematics & Tracking",
     desc: "Monitor real-time location, performance, and efficiency of your vehicles.",
   },
   {
-    icon: <FaRoute className="text-4xl text-lxj-alert" />,
+    icon: <FaRoute className="text-4xl text-white" />,
     title: "Route Optimization",
     desc: "Minimize fuel costs and delivery times with AI-powered route planning.",
   },
   {
-    icon: <FaGavel className="text-4xl text-lxj-alert" />,
+    icon: <FaGavel className="text-4xl text-white" />,
     title: "Transparent Bidding System",
     desc: "Fair, fast, and visible bidding between shippers and transporters.",
   },
@@ -40,7 +40,7 @@ export default function KeyFeatures() {
             >
               <div className="flex flex-col items-start space-y-4">
                 {feature.icon}
-                <h3 className="text-xl font-semibold text-lxj-alert">
+                <h3 className="text-xl font-semibold text-white">
                   {feature.title}
                 </h3>
                 <p className="text-white">{feature.desc}</p>
