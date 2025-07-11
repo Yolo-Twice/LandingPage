@@ -1,6 +1,6 @@
 export default function Testimonials() {
   return (
-    <section className="relative min-h-screen snap-start bg-lxj-softWhite text-gray-900 px-6 py-24 space-y-24">
+    <section className="relative min-h-screen snap-start bg-lxj-softWhite text-gray-900 px-6 py-40 space-y-24">
       {/* Section Container */}
       <div className="max-w-6xl mx-auto space-y-16">
         {/* Testimonials Grid */}

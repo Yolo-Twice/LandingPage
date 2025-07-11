@@ -1,4 +1,5 @@
 import KeyFeatures from "./keyFeatures";
+import News from "./landingPageComponents/news.jsx";
 import Testimonials from "./landingPageComponents/testimonials";
 export default function HeroLanding() {
   return (
@@ -66,6 +67,7 @@ export default function HeroLanding() {
 </section>
 
 <Testimonials />
+<News />
 
   </div>  
 );
