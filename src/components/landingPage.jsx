@@ -1,4 +1,5 @@
 import KeyFeatures from "./keyFeatures";
+import Testimonials from "./landingPageComponents/testimonials";
 export default function HeroLanding() {
   return (
     <div className="h-screen snap-y snap-mandatory overflow-y-scroll">
@@ -50,7 +51,7 @@ export default function HeroLanding() {
 <section className="relative min-h-screen snap-start">
   {/* Background Image */}
   <img
-    src="images/key-features-shipyard.jpg" // Change to your desired image
+    src="images/ship_in_ocean.jpeg" // Change to your desired image
     alt="Key Features Background"
     className="absolute inset-0 w-full h-full object-cover z-0"
   />
@@ -64,6 +65,7 @@ export default function HeroLanding() {
   </div>
 </section>
 
+<Testimonials />
 
   </div>  
 );

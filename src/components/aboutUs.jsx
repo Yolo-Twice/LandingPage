@@ -4,6 +4,20 @@ import {
   Smile,
   Cpu,
   CheckCircle,
+  AlertTriangle,
+  Ban,
+  EyeOff,
+  Truck,
+  Map,
+  PackageCheck,
+  Users,
+  Headset,
+  BadgeDollarSign,
+  Network,
+  Radar,
+  Gavel,
+  LineChart,
+  Wallet,
 } from "lucide-react";
 
 export default function AboutUs() {
@@ -101,44 +115,157 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* Problem Section */}
-        <div className="max-w-5xl mx-auto bg-orange-200 p-8 rounded-2xl shadow-xl backdrop-blur-md">
-          <h2 className="text-4xl font-extrabold tracking-tight text-lxj-primary mb-4">
-            The Problem
-          </h2>
-          <ul className="list-disc list-inside text-lg text-gray-800 space-y-3 pl-4">
-            <li>
-              Fragmented logistics make shipment management complex and time-consuming. Most providers focus on FTL, leaving a major gap in the PTL market.
-            </li>
-            <li>
-              Lack of transparent pricing and difficulty in comparing different logistics providers.
-            </li>
-            <li>
-              Inability to track shipments in real-time, leading to poor customer satisfaction.
-            </li>
-          </ul>
-        </div>
+      {/* Problem Section */}
+<div className="max-w-5xl mx-auto bg-orange-200 p-8 rounded-2xl shadow-xl backdrop-blur-md">
+  <h2 className="text-4xl font-extrabold tracking-tight text-lxj-primary mb-4">
+    The Problem
+  </h2>
+  <ul className="text-lg text-gray-800 space-y-4 pl-1">
+    <li className="flex items-start gap-4">
+      <AlertTriangle className="text-orange-600 w-7 h-7 mt-1 shrink-0" />
+      <span>
+        Fragmented logistics make shipment management complex and time-consuming. Most providers focus on FTL, leaving a major gap in the PTL market.
+      </span>
+    </li>
+    <li className="flex items-start gap-4">
+      <Ban className="text-orange-600 w-7 h-7 mt-1 shrink-0" />
+      <span>
+        Lack of transparent pricing and difficulty in comparing different logistics providers.
+      </span>
+    </li>
+    <li className="flex items-start gap-4">
+      <EyeOff className="text-orange-600 w-7 h-7 mt-1 shrink-0" />
+      <span>
+        Inability to track shipments in real-time, leading to poor customer satisfaction.
+      </span>
+    </li>
+  </ul>
+</div>
 
-        {/* Solution Section */}
-        <div className="max-w-5xl mx-auto bg-green-200 p-8 rounded-2xl shadow-xl backdrop-blur-md">
-          <h2 className="text-4xl font-extrabold tracking-tight text-lxj-primary mb-4">
-            Our Solution
-          </h2>
-          <ul className="list-disc list-inside text-lg text-gray-800 space-y-3 pl-4">
-            <li>
-              A streamlined platform for easy shipment booking and management, offering reliable, cost-effective PTL services with flexible scheduling, real-time tracking, and optimized space use.
-            </li>
-            <li>
-              Live shipment tracking and updates through our tech-enabled dashboard.
-            </li>
-            <li>
-              Integrated rate comparison engine showing quotes from multiple providers.
-            </li>
-            <li>
-              Support for road, rail, air, and multimodal transport for all types of logistics needs.
-            </li>
-          </ul>
-        </div>
+{/* Solution Section */}
+<div className="max-w-5xl mx-auto bg-green-200 p-8 rounded-2xl shadow-xl backdrop-blur-md">
+  <h2 className="text-4xl font-extrabold tracking-tight text-lxj-primary mb-4">
+    Our Solution
+  </h2>
+  <ul className="text-lg text-gray-800 space-y-4 pl-1">
+    <li className="flex items-start gap-4">
+      <Truck className="text-green-700 w-7 h-7 mt-1 shrink-0" />
+      <span>
+        A streamlined platform for easy shipment booking and management, offering reliable, cost-effective PTL services with flexible scheduling, real-time tracking, and optimized space use.
+      </span>
+    </li>
+    <li className="flex items-start gap-4">
+      <Radar className="text-green-700 w-7 h-7 mt-1 shrink-0" />
+      <span>
+        Live shipment tracking and updates through our tech-enabled dashboard.
+      </span>
+    </li>
+    <li className="flex items-start gap-4">
+      <BadgeDollarSign className="text-green-700 w-7 h-7 mt-1 shrink-0" />
+      <span>
+        Integrated rate comparison engine showing quotes from multiple providers.
+      </span>
+    </li>
+    <li className="flex items-start gap-4">
+      <Map className="text-green-700 w-7 h-7 mt-1 shrink-0" />
+      <span>
+        Support for road, rail, air, and multimodal transport for all types of logistics needs.
+      </span>
+    </li>
+  </ul>
+</div>
+
+{/* Our Service Section */}
+<div className="max-w-5xl mx-auto bg-purple-200 p-8 rounded-2xl shadow-xl backdrop-blur-md">
+  <h2 className="text-4xl font-extrabold tracking-tight text-lxj-primary mb-4">
+    Our Service
+  </h2>
+  <ul className="text-lg text-gray-800 space-y-4 pl-1">
+    <li className="flex items-start gap-4">
+      <Gavel className="text-blue-700 w-7 h-7 mt-1 shrink-0" />
+      <span>
+        <strong>Legal Service</strong> – We provide access to expert legal consultation by connecting users with verified partners who specialize in logistics-related compliance and regulations.
+      </span>
+    </li>
+    <li className="flex items-start gap-4">
+      <LineChart className="text-blue-700 w-7 h-7 mt-1 shrink-0" />
+      <span>
+        <strong>Consulting Service</strong> – Our team of experts provides insights and strategies to optimize your logistics.
+      </span>
+    </li>
+    <li className="flex items-start gap-4">
+      <Wallet className="text-blue-700 w-7 h-7 mt-1 shrink-0" />
+      <span>
+        <strong>Financial Service</strong> – We offer flexible payment options and cost-management tools to support your budget.
+      </span>
+    </li>
+  </ul>
+</div>
+
+{/* Why Choose LogiXJunction Section */}
+<div className="max-w-6xl mx-auto bg-cyan-200 p-8 rounded-2xl shadow-xl backdrop-blur-md">
+  <h2 className="text-4xl font-extrabold tracking-tight text-lxj-primary mb-8 text-center">
+    Why Choose LogiXJunction?
+  </h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {/* Card 1 */}
+    <div className="bg-cyan-100 rounded-2xl p-6 shadow-md flex items-start gap-4 hover:shadow-2xl transition">
+      <PackageCheck className="text-purple-600 w-8 h-8 mt-1 shrink-0" />
+      <div>
+        <h3 className="font-semibold text-lg">Reliable Logistics</h3>
+        <p className="text-gray-700">
+          Reliable and efficient logistics solutions tailored for businesses of all sizes.
+        </p>
+      </div>
+    </div>
+
+    {/* Card 2 */}
+    <div className="bg-cyan-100 rounded-2xl p-6 shadow-md flex items-start gap-4 hover:shadow-2xl transition">
+      <Users className="text-purple-600 w-8 h-8 mt-1 shrink-0" />
+      <div>
+        <h3 className="font-semibold text-lg">Industry Expertise</h3>
+        <p className="text-gray-700">
+          Experienced team with in-depth logistics and supply chain knowledge.
+        </p>
+      </div>
+    </div>
+
+    {/* Card 3 */}
+    <div className="bg-cyan-100 rounded-2xl p-6 shadow-md flex items-start gap-4 hover:shadow-2xl transition">
+      <Headset className="text-purple-600 w-8 h-8 mt-1 shrink-0" />
+      <div>
+        <h3 className="font-semibold text-lg">Dedicated Support</h3>
+        <p className="text-gray-700">
+          Round-the-clock customer support to ensure seamless operations.
+        </p>
+      </div>
+    </div>
+
+    {/* Card 4 */}
+    <div className="bg-cyan-100 rounded-2xl p-6 shadow-md flex items-start gap-4 hover:shadow-2xl transition">
+      <ShieldCheck className="text-purple-600 w-8 h-8 mt-1 shrink-0" />
+      <div>
+        <h3 className="font-semibold text-lg">Robust Security</h3>
+        <p className="text-gray-700">
+          Comprehensive security measures to protect your goods and data.
+        </p>
+      </div>
+    </div>
+
+    {/* Card 5 */}
+    <div className="bg-cyan-100 rounded-2xl p-6 shadow-md flex items-start gap-4 hover:shadow-2xl transition">
+      <Radar className="text-purple-600 w-8 h-8 mt-1 shrink-0" />
+      <div>
+        <h3 className="font-semibold text-lg">Smart Tracking & Rates</h3>
+        <p className="text-gray-700">
+          Real-time tracking and intelligent rate comparison for smart decision-making.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       </div>
     </section>
