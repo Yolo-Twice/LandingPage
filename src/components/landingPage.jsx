@@ -1,4 +1,4 @@
-import KeyFeatures from "./keyFeatures";
+import KeyFeatures from "./landingPageComponents/keyFeatures.jsx";
 import News from "./landingPageComponents/news.jsx";
 import CaseStudyShowcase from "./landingPageComponents/caseStudy";
 import Testimonials from "./landingPageComponents/testimonials";
@@ -50,28 +50,10 @@ export default function HeroLanding() {
   </div>
 </section>
 
-
-<section className="relative min-h-screen snap-start">
-  {/* Background Image */}
-  <img
-    src="images/ship_in_ocean.jpeg" // Change to your desired image
-    alt="Key Features Background"
-    className="absolute inset-0 w-full h-full object-cover z-0"
-  />
-
-  {/* Optional Overlay */}
-  <div className="absolute inset-0 bg-black/30 z-10" />
-
-  {/* Foreground Content */}
-  <div className="relative z-20 flex items-center justify-center px-6 py-20">
-      <KeyFeatures />
-  </div>
-</section>
-
+<KeyFeatures />
 <Testimonials />
-<News />
-
 <CaseStudyShowcase/>
+<News />
 <ContactCTASection/>
   </div>  
 );

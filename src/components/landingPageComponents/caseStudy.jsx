@@ -20,7 +20,7 @@ export default function CaseStudyShowcase() {
            </div>
 
               {/* Challenge */}
-              <div className="space-y-3 bg-white rounded-3xl p-6 shadow-xl border-2 border-zinc-200 ">
+              <div className="space-y-3 bg-white rounded-3xl p-6 shadow-xl border border-zinc-200 ">
                 <div className="flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5 text-lxj-alert" />
                   <h3 className="text-2xl font-bold text-lxj-alert">Challenge</h3>
@@ -33,7 +33,7 @@ export default function CaseStudyShowcase() {
               </div>
 
               {/* Solution */}
-              <div className="space-y-3 bg-white  rounded-3xl p-6 shadow-xl border-2 border-zinc-200">
+              <div className="space-y-3 bg-white  rounded-3xl p-6 shadow-xl border border-zinc-200">
                 <div className="flex items-center gap-2">
                   <Lightbulb className="w-5 h-5 text-lxj-accent" />
                   <h3 className="text-2xl font-bold text-lxj-accent">Our Solution</h3>
@@ -47,7 +47,7 @@ export default function CaseStudyShowcase() {
               </div>
 
               {/* Result */}
-              <div className="space-y-6 bg-white  rounded-3xl p-6 shadow-xl border-2 border-zinc-200">
+              <div className="space-y-6 bg-white  rounded-3xl p-6 shadow-xl border border-zinc-200">
                 {/* Header */}
                 <div className="flex items-center gap-3">
                   <Rocket className="w-6 h-6 text-lxj-accent" />
