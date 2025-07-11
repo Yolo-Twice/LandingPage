@@ -42,7 +42,7 @@ export default function Careers() {
 
 
         {/* Intro */}
-        <div className="bg-white border-2 border-gray-200 p-6 rounded-2xl shadow-md text-gray-800 text-lg leading-relaxed mb-10">
+        <div className="bg-white border-2 border-zinc-200 p-6 rounded-2xl shadow-md text-gray-800 text-lg leading-relaxed mb-10">
           <div className="columns-1 md:columns-2 gap-6 space-y-4">
             <p>
             At <span className="font-bold text-lxj-accent">Logi</span><span className="font-bold text-lxj-alert">Xjunction</span>, every team is essential to transforming India’s freight logistics ecosystem. We believe that solving complex logistics challenges requires collaboration across functions — from engineering and operations to customer success and strategic growth. Our work is rooted in solving real-world pain points for transporters, shippers, and logistics operators across the country.
@@ -63,7 +63,7 @@ export default function Careers() {
         {/* Dropdowns */}
         <form className="flex flex-col items-center gap-4 mx-auto">
           <select
-            className="px-4 py-3 w-[38vh] text-center border border-gray-300 rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-150 ease-in-out bg-white text-gray-900"
+            className="px-4 py-3 w-[38vh] text-center border border-zinc-200 rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-150 ease-in-out bg-white text-gray-900"
           >
             <option value="">Select a State</option>
             <option value="Assam">Assam</option>
@@ -88,7 +88,7 @@ export default function Careers() {
 
 
           <select
-            className="px-4 py-3 w-[38vh] text-center border border-gray-300 rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-150 ease-in-out bg-white text-gray-900"
+            className="px-4 py-3 w-[38vh] text-center border border-zinc-200 rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition duration-150 ease-in-out bg-white text-gray-900"
             onChange={handleDeptChange}
             value={selectedDept}
           >

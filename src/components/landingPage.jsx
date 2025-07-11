@@ -1,5 +1,7 @@
 import KeyFeatures from "./keyFeatures";
+import CaseStudyShowcase from "./landingPageComponents/caseStudy";
 import Testimonials from "./landingPageComponents/testimonials";
+import ContactCTASection from "./landingPageComponents/contact";
 export default function HeroLanding() {
   return (
     <div className="h-screen snap-y snap-mandatory overflow-y-scroll">
@@ -66,7 +68,8 @@ export default function HeroLanding() {
 </section>
 
 <Testimonials />
-
+<CaseStudyShowcase/>
+<ContactCTASection/>
   </div>  
 );
 }
